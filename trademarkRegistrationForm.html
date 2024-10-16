@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Legal</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- ---Fonts--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+  </head>
+  <body>
+    <div class="page-wrapper chiller-theme toggled">
+      <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-brand">
+            <a href="#">
+              <img src="assets/img/logo.svg" alt="logo" class="img-fluid" />
+            </a>
+            <div id="close-sidebar">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="sidebar-menu">
+            <ul>
+              <!-- <li class="header-menu">
+                <span>General</span>
+              </li> -->
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="assets/img/dashIcon.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Dashboard</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="trademarkRegistrationForm.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/dashIcon.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Dashboard 1</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/dashIcon.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Dashboard 2</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/dashIcon.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Dashboard 3</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="assets/img/start-business.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Start Business</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/start-business.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Products</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/start-business.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Orders</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="assets/img/general.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Protect Business</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/general.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>General</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="assets/img/manage.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Manage Business</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/manage.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Manage Business</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Grow Business</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/chart.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Grow Business</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="assets/img/registration.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Other Registration</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="trademarkRegistrationForm.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/registration.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Registration Form</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="trademarkRenewalForm.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/registration.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Renewal Form</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- <li>
+                <a href="#">
+                  <i class="fa fa-book"></i>
+                  <span>Documentation</span>
+                </a>
+              </li> -->
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+      </nav>
+      <header class="header">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+                <i class="fas fa-bars"></i>
+              </a>
+            </div>
+            <div class="d-flex align-items-center">
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-2"
+              >
+                <img src="assets/img/mail.svg" alt="mail" class="img-fluid" />
+              </a>
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-2"
+              >
+                <img src="assets/img/flag.svg" alt="flag" class="img-fluid" />
+              </a>
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-5"
+              >
+                <img
+                  src="assets/img/notify.svg"
+                  alt="notification"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="d-flex align-items-center">
+                <div
+                  class="userBox d-flex align-items-center justify-content-center rounded-pill me-3"
+                >
+                  <img src="assets/img/user.png" alt="user" class="img-fluid" />
+                </div>
+                <div class="d-block">
+                  <p class="mb-2 text-white">Mr Prakash Sharma</p>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Admin</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- sidebar-wrapper  -->
+      <main class="page-content">
+        <div class="container-fluid">
+          <h1 class="mainHeading">Trademark Registration Form</h1>
+          <div class="row tab_col_gap">
+            <div class="col-xl-3 col-lg-4 col-12">
+              <nav>
+                <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link active"
+                    id="nav-client-info-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-client-info"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-client-info"
+                    aria-selected="true"
+                  >
+                    Client Information
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-trademark-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-trademark"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-trademark"
+                    aria-selected="false"
+                  >
+                    Trademark Information
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-document-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-document"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-document"
+                    aria-selected="false"
+                  >
+                    Documents Required
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-nda-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-nda"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-nda"
+                    aria-selected="false"
+                  >
+                    NDA Agreement
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-timecost-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-timecost"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-timecost"
+                    aria-selected="false"
+                  >
+                    Estimation Time and Cost
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-notes-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-notes"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-notes"
+                    aria-selected="false"
+                  >
+                    Additional Notes
+                  </button>
+                </div>
+              </nav>
+            </div>
+            <div class="col-xl-9 col-lg-8 col-12">
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade active show"
+                  id="nav-client-info"
+                  role="tabpanel"
+                  aria-labelledby="nav-client-info-tab"
+                >
+                  <div class="row tab_col_gap">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Client Name:</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Business Name:</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Business Name"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Email Address:</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Contact Number:</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Contact Number"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Business Category:</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Business Category"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Business Address:</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Business Address"
+                      />
+                    </div>
+                    <div class="col-12 mt-lg-5 mt-md-4 mt-3">
+                      <div
+                        class="d-flex align-items-center justify-content-end"
+                      >
+                        <button class="btn customBtn lg-light me-3">
+                          Cancel
+                        </button>
+                        <button class="btn customBtn bg-orange text-white">
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-trademark"
+                  role="tabpanel"
+                  aria-labelledby="nav-trademark-tab"
+                >
+                  <div class="row tab_col_gap">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Trademark Name:</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Trademark Image:</label
+                      >
+                      <div class="file-drop-area">
+                        <span class="choose-file-button">Upload Image</span>
+                        <span class="file-message"></span>
+                        <input class="file-input" type="file" multiple />
+                        <span class="upload-abs"
+                          ><img
+                            src="assets/img/upload.svg"
+                            alt="Upload"
+                            class="img-fluid"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Owner's Name:</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Owner's PAN Card:</label
+                      >
+                      <div class="file-drop-area">
+                        <span class="choose-file-button">Upload Image</span>
+                        <span class="file-message"></span>
+                        <input class="file-input" type="file" multiple />
+                        <span class="upload-abs"
+                          ><img
+                            src="assets/img/upload.svg"
+                            alt="Upload"
+                            class="img-fluid"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Owner's Aadhaar Card:</label
+                      >
+                      <div class="file-drop-area">
+                        <span class="choose-file-button">Upload Image</span>
+                        <span class="file-message"></span>
+                        <input class="file-input" type="file" multiple />
+                        <span class="upload-abs"
+                          ><img
+                            src="assets/img/upload.svg"
+                            alt="Upload"
+                            class="img-fluid"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Contact Number:</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Contact"
+                      />
+                    </div>
+                    <div class="col-12 mt-lg-5 mt-md-4 mt-3">
+                      <div
+                        class="d-flex align-items-center justify-content-end"
+                      >
+                        <button class="btn customBtn lg-light me-3">
+                          Cancel
+                        </button>
+                        <button class="btn customBtn bg-orange text-white">
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-document"
+                  role="tabpanel"
+                  aria-labelledby="nav-document-tab"
+                >
+                  <div class="row tab_col_gap">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >PAN Card:</label
+                      >
+                      <div class="file-drop-area">
+                        <span class="choose-file-button file-message"
+                          >Pan Card</span
+                        >
+                        <input class="file-input" type="file" multiple />
+                        <span class="upload-abs"
+                          ><img
+                            src="assets/img/upload.svg"
+                            alt="Upload"
+                            class="img-fluid"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Aadhaar Card:</label
+                      >
+                      <div class="file-drop-area">
+                        <span class="choose-file-button file-message"
+                          >Upload Image</span
+                        >
+                        <input class="file-input" type="file" multiple />
+                        <span class="upload-abs"
+                          ><img
+                            src="assets/img/upload.svg"
+                            alt="Upload"
+                            class="img-fluid"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Trademark Name:</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Logo Image:</label
+                      >
+                      <div class="file-drop-area">
+                        <span class="choose-file-button file-message"
+                          >Upload</span
+                        >
+                        <input class="file-input" type="file" multiple />
+                        <span class="upload-abs"
+                          ><img
+                            src="assets/img/upload.svg"
+                            alt="Upload"
+                            class="img-fluid"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Business Registration Certificate:</label
+                      >
+                      <div class="file-drop-area">
+                        <span class="choose-file-button file-message"
+                          >Upload</span
+                        >
+                        <input class="file-input" type="file" multiple />
+                        <span class="upload-abs"
+                          ><img
+                            src="assets/img/upload.svg"
+                            alt="Upload"
+                            class="img-fluid"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Class of Goods/Services for Trademark:</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Class 35"
+                      />
+                    </div>
+                    <div class="col-12 mt-lg-5 mt-md-4 mt-3">
+                      <div
+                        class="d-flex align-items-center justify-content-end"
+                      >
+                        <button class="btn customBtn lg-light me-3">
+                          Cancel
+                        </button>
+                        <button class="btn customBtn bg-orange text-white">
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-nda"
+                  role="tabpanel"
+                  aria-labelledby="nav-nda-tab"
+                >
+                  <div class="col-lg-9 col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        The client agrees to maintain confidentiality of all
+                        processes and documents related to the trademark
+                        registration.
+                      </label>
+                    </div>
+                    <div class="form-check mt-4">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        The service provider agrees to protect the client's
+                        proprietary information and will not disclose it to
+                        third parties, except for professionals directly
+                        involved in delivering the service.
+                      </label>
+                    </div>
+                    <div class="form-check mt-4">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Signature of Client: <span class="signBox"></span>
+                      </label>
+                    </div>
+                    <div class="form-check mt-4">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Signature of Service Provider:
+                        <span class="signBox"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row tab_col_gap mt-4">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Signature of Client:</label
+                      >
+                      <div class="file-drop-area">
+                        <span class="choose-file-button file-message"
+                          >Upload</span
+                        >
+                        <input class="file-input" type="file" multiple />
+                        <span class="upload-abs"
+                          ><img
+                            src="assets/img/upload.svg"
+                            alt="Upload"
+                            class="img-fluid"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Signature of Service Provider:</label
+                      >
+                      <div class="file-drop-area">
+                        <span class="choose-file-button file-message"
+                          >Upload</span
+                        >
+                        <input class="file-input" type="file" multiple />
+                        <span class="upload-abs"
+                          ><img
+                            src="assets/img/upload.svg"
+                            alt="Upload"
+                            class="img-fluid"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-lg-5 mt-md-4 mt-3">
+                      <div
+                        class="d-flex align-items-center justify-content-end"
+                      >
+                        <button class="btn customBtn lg-light me-3">
+                          Cancel
+                        </button>
+                        <button class="btn customBtn bg-orange text-white">
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-timecost"
+                  role="tabpanel"
+                  aria-labelledby="nav-timecost-tab"
+                >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Estimated Time for Registration Process: 4-6 weeks (after
+                      submission of all documents)
+                    </label>
+                  </div>
+                  <div class="form-check mt-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Cost Estimate: ₹12,000 (Professional fee + Government
+                      charges)
+                    </label>
+                  </div>
+                  <div class="row tab_col_gap mt-5">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Cost Estimate:</label
+                      >
+                      <div class="costWritten">₹12,000</div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Registration Process:</label
+                      >
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>2-4 weeks</option>
+                        <option value="1">4-6 weeks</option>
+                        <option value="2">6-8 weeks</option>
+                        <option value="3">8-10 weeks</option>
+                      </select>
+                    </div>
+                    <div class="col-12 mt-lg-5 mt-md-4 mt-3">
+                      <div
+                        class="d-flex align-items-center justify-content-end"
+                      >
+                        <button class="btn customBtn lg-light me-3">
+                          Cancel
+                        </button>
+                        <button class="btn customBtn bg-orange text-white">
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-notes"
+                  role="tabpanel"
+                  aria-labelledby="nav-notes-tab"
+                >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Any Specific Requirements from the Client: <br />
+                      "I want to file the trademark under Class 35 for business
+                      services only."
+                    </label>
+                  </div>
+                  <div class="form-check mt-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Additional Information for Professional: <br />
+                      "Client wants to ensure priority processing for the
+                      trademark registration."
+                    </label>
+                  </div>
+                  <div class="form-check mt-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Additional Information for Professional: <br />"Client
+                      wants to ensure priority processing for the trademark
+                      registration."
+                    </label>
+                  </div>
+                  <div class="row tab_col_gap mt-5">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Cost Estimate:</label
+                      >
+                      <div class="costWritten">₹12,000</div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Registration Process:</label
+                      >
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>2-4 weeks</option>
+                        <option value="1">4-6 weeks</option>
+                        <option value="2">6-8 weeks</option>
+                        <option value="3">8-10 weeks</option>
+                      </select>
+                    </div>
+                    <div class="col-12 mt-lg-5 mt-md-4 mt-3">
+                      <div
+                        class="d-flex align-items-center justify-content-end"
+                      >
+                        <button class="btn customBtn lg-light me-3">
+                          Cancel
+                        </button>
+                        <button class="btn customBtn bg-orange text-white">
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- page-content" -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
