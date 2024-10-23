@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Legal</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <!-- <link href="../assets/img/favicon.png" rel="icon" /> -->
+    <!-- <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
+
+    <!-- ---Fonts--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/font.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/sidebar.css" />
+  </head>
+  <body>
+    <div class="page-wrapper chiller-theme toggled">
+      <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-brand">
+            <a href="dashBoard.html">
+              <img src="../assets/img/logo.svg" alt="logo" class="img-fluid" />
+            </a>
+            <div id="close-sidebar">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="sidebar-menu">
+            <ul>
+              <li class="sidebar-dropdown">
+                <a href="dashBoard.html">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/dashIcon.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/start-business.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Client Management</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="addNewClient.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/start-business.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Add New</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="clientHistory.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/start-business.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Client History</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/general.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Payment</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="paymentHistory.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/general.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Payment History</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="paymentManagement.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/general.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Payment Management</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/manage.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Task Manage</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="addNewTask.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/manage.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Add New</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="manageTask.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/manage.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Manage Task</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="taskOverview.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/manage.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Task Overview</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Chat</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="clientMessages.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/chart.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Client Messages</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Report Analysis</span>
+                </a>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Invoice</span>
+                </a>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Profile Settings</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/chart.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Client Messages</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+      </nav>
+      <header class="header">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+                <i class="fas fa-bars"></i>
+              </a>
+            </div>
+            <div class="d-flex align-items-center">
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-2"
+              >
+                <img
+                  src="../assets/img/mail.svg"
+                  alt="mail"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-2"
+              >
+                <img
+                  src="../assets/img/flag.svg"
+                  alt="flag"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-5"
+              >
+                <img
+                  src="../assets/img/notify.svg"
+                  alt="notification"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="d-flex align-items-center">
+                <div
+                  class="userBox d-flex align-items-center justify-content-center rounded-pill me-3"
+                >
+                  <img
+                    src="../assets/img/user.png"
+                    alt="user"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="d-block">
+                  <p class="mb-2 text-white">Mr Prakash Sharma</p>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Admin</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- sidebar-wrapper  -->
+      <main class="page-content form-input-fields table-custom">
+        <div class="container-fluid">
+          <h1 class="mainHeading">Manage Task</h1>
+          <div class="row col_gap align-items-center">
+            <div class="col-lg-5 col-md-6 col-12">
+              <div class="d-flex align-items-center">
+                <h4 class="h4Heading font-rubik md-grey fw-500 me-5 m-0">
+                  Task List
+                </h4>
+                <div class="searchbox input-group">
+                  <span
+                    class="input-group-text border-0 bg-transparent"
+                    id="basic-addon1"
+                    ><i class="fa fa-search dr-grey" aria-hidden="true"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control border-0"
+                    placeholder="Username"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-6 col-12">
+              <div class="d-flex align-items-center">
+                <button
+                  class="dropFilter bg-white fs-14 fw-500 font-rubik d-flex align-items-center me-3"
+                >
+                  Filter
+                  <span class="ms-3"
+                    ><img
+                      src="../assets/img/filter.svg"
+                      alt="filter"
+                      class="img-fluid"
+                  /></span>
+                </button>
+                <a href="addNewTask.html" class="btn customBlBtn text-white"
+                  >Add New Task</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="table-responsive mt-5">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Client Name</th>
+                  <th scope="col">Task Name</th>
+                  <th scope="col">Service Type</th>
+                  <th scope="col">Deadline</th>
+                  <th scope="col">Professional</th>
+                  <th scope="col">Task Status</th>
+                  <th scope="col" class="text-end">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center">
+                      <div class="clientImg me-1">
+                        <img
+                          src="../assets/img/clientUser.png"
+                          alt="client"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <span>Alex Roy</span>
+                    </div>
+                  </th>
+                  <td>Client Registration</td>
+                  <td>Trademark <br />Registration</td>
+                  <td>10 days</td>
+                  <td>CA</td>
+                  <td>
+                    <a
+                      href="#"
+                      class="greenBtnBg text-white px-2 py-1 rounded-pill text-decoration-none"
+                      >Complete</a
+                    >
+                  </td>
+                  <td class="text-end">
+                    <div class="dropdown-custom">
+                      <i
+                        class="fa-solid fa-ellipsis dropdownBtn cursor-pointer"
+                      ></i>
+                      <div class="dropdown-custom-content">
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/edit.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Edit</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/delete.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Delete</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/view.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >View</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center">
+                      <div class="clientImg me-1">
+                        <img
+                          src="../assets/img/clientUser.png"
+                          alt="client"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <span>Alex Roy</span>
+                    </div>
+                  </th>
+                  <td>Service Registration</td>
+                  <td>Trademark <br />Registration</td>
+                  <td>06 days</td>
+                  <td>Legal Advisor</td>
+                  <td>
+                    <a
+                      href="#"
+                      class="pendingBtn md-grey px-2 py-1 rounded-pill text-decoration-none"
+                      >Pending</a
+                    >
+                  </td>
+                  <td class="text-end">
+                    <div class="dropdown-custom">
+                      <i
+                        class="fa-solid fa-ellipsis dropdownBtn cursor-pointer"
+                      ></i>
+                      <div class="dropdown-custom-content">
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/edit.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Edit</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/delete.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Delete</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/view.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >View</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center">
+                      <div class="clientImg me-1">
+                        <img
+                          src="../assets/img/clientUser.png"
+                          alt="client"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <span>Alex Roy</span>
+                    </div>
+                  </th>
+                  <td>Trademark <br />Registration</td>
+                  <td>Trademark <br />Registration</td>
+                  <td>01 Week</td>
+                  <td>Legal Advisor</td>
+                  <td>
+                    <a
+                      href="#"
+                      class="createBlue text-white px-2 py-1 rounded-pill text-decoration-none"
+                      >Created</a
+                    >
+                  </td>
+                  <td class="text-end">
+                    <div class="dropdown-custom">
+                      <i
+                        class="fa-solid fa-ellipsis dropdownBtn cursor-pointer"
+                      ></i>
+                      <div class="dropdown-custom-content">
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/edit.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Edit</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/delete.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Delete</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/view.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >View</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center">
+                      <div class="clientImg me-1">
+                        <img
+                          src="../assets/img/clientUser.png"
+                          alt="client"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <span>Alex Roy</span>
+                    </div>
+                  </th>
+                  <td>Trademark <br />Registration</td>
+                  <td>Trademark <br />Registration</td>
+                  <td>01 Week</td>
+                  <td>Legal Advisor</td>
+                  <td>
+                    <a
+                      href="#"
+                      class="greenProgress md-grey px-2 py-1 rounded-pill text-decoration-none"
+                      >In progress</a
+                    >
+                  </td>
+                  <td class="text-end">
+                    <div class="dropdown-custom">
+                      <i
+                        class="fa-solid fa-ellipsis dropdownBtn cursor-pointer"
+                      ></i>
+                      <div class="dropdown-custom-content">
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/edit.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Edit</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/delete.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Delete</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/view.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >View</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center">
+                      <div class="clientImg me-1">
+                        <img
+                          src="../assets/img/clientUser.png"
+                          alt="client"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <span>Alex Roy</span>
+                    </div>
+                  </th>
+                  <td>Client Registration</td>
+                  <td>Trademark <br />Registration</td>
+                  <td>10 days</td>
+                  <td>CA</td>
+                  <td>
+                    <a
+                      href="#"
+                      class="greenBtnBg text-white px-2 py-1 rounded-pill text-decoration-none"
+                      >Complete</a
+                    >
+                  </td>
+                  <td class="text-end">
+                    <div class="dropdown-custom">
+                      <i
+                        class="fa-solid fa-ellipsis dropdownBtn cursor-pointer"
+                      ></i>
+                      <div class="dropdown-custom-content">
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/edit.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Edit</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/delete.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Delete</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/view.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >View</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center">
+                      <div class="clientImg me-1">
+                        <img
+                          src="../assets/img/clientUser.png"
+                          alt="client"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <span>Alex Roy</span>
+                    </div>
+                  </th>
+                  <td>Service Registration</td>
+                  <td>Trademark <br />Registration</td>
+                  <td>06 days</td>
+                  <td>Legal Advisor</td>
+                  <td>
+                    <a
+                      href="#"
+                      class="pendingBtn md-grey px-2 py-1 rounded-pill text-decoration-none"
+                      >Pending</a
+                    >
+                  </td>
+                  <td class="text-end">
+                    <div class="dropdown-custom">
+                      <i
+                        class="fa-solid fa-ellipsis dropdownBtn cursor-pointer"
+                      ></i>
+                      <div class="dropdown-custom-content">
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/edit.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Edit</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/delete.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Delete</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/view.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >View</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center">
+                      <div class="clientImg me-1">
+                        <img
+                          src="../assets/img/clientUser.png"
+                          alt="client"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <span>Alex Roy</span>
+                    </div>
+                  </th>
+                  <td>Trademark <br />Registration</td>
+                  <td>Trademark <br />Registration</td>
+                  <td>01 Week</td>
+                  <td>Legal Advisor</td>
+                  <td>
+                    <a
+                      href="#"
+                      class="createBlue text-white px-2 py-1 rounded-pill text-decoration-none"
+                      >Created</a
+                    >
+                  </td>
+                  <td class="text-end">
+                    <div class="dropdown-custom">
+                      <i
+                        class="fa-solid fa-ellipsis dropdownBtn cursor-pointer"
+                      ></i>
+                      <div class="dropdown-custom-content">
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/edit.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Edit</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/delete.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Delete</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/view.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >View</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center">
+                      <div class="clientImg me-1">
+                        <img
+                          src="../assets/img/clientUser.png"
+                          alt="client"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <span>Alex Roy</span>
+                    </div>
+                  </th>
+                  <td>Trademark <br />Registration</td>
+                  <td>Trademark <br />Registration</td>
+                  <td>01 Week</td>
+                  <td>Legal Advisor</td>
+                  <td>
+                    <a
+                      href="#"
+                      class="greenProgress md-grey px-2 py-1 rounded-pill text-decoration-none"
+                      >In progress</a
+                    >
+                  </td>
+                  <td class="text-end">
+                    <div class="dropdown-custom">
+                      <i
+                        class="fa-solid fa-ellipsis dropdownBtn cursor-pointer"
+                      ></i>
+                      <div class="dropdown-custom-content">
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/edit.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Edit</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/delete.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >Delete</a
+                        >
+                        <a href="#"
+                          ><span class="me-2">
+                            <img
+                              src="../assets/img/view.svg"
+                              alt="client"
+                              class="img-fluid"
+                            /> </span
+                          >View</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true"
+                    ><img
+                      src="../assets/img/arrow_left_page.svg"
+                      alt="arrow"
+                      class="img-fluid"
+                  /></span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true"
+                    ><img
+                      src="../assets/img/arrow_right_page.svg"
+                      alt="arrow"
+                      class="img-fluid"
+                  /></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </main>
+      <!-- page-content" -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/datepicker.js"></script>
+  </body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Legal</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <!-- <link href="../assets/img/favicon.png" rel="icon" /> -->
+    <!-- <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
+
+    <!-- ---Fonts--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/font.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/sidebar.css" />
+  </head>
+  <body>
+    <div class="page-wrapper chiller-theme toggled">
+      <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-brand">
+            <a href="dashBoard.html">
+              <img src="../assets/img/logo.svg" alt="logo" class="img-fluid" />
+            </a>
+            <div id="close-sidebar">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="sidebar-menu">
+            <ul>
+              <li class="sidebar-dropdown">
+                <a href="dashBoard.html">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/dashIcon.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/start-business.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Client Management</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="addNewClient.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/start-business.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Add New</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="clientHistory.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/start-business.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Client History</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/general.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Payment</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="paymentHistory.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/general.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Payment History</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="paymentManagement.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/general.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Payment Management</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/manage.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Task Manage</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="addNewTask.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/manage.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Add New</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="manageTask.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/manage.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Manage Task</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="taskOverview.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/manage.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Task Overview</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Chat</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="clientMessages.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/chart.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Client Messages</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Report Analysis</span>
+                </a>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Invoice</span>
+                </a>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Profile Settings</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/chart.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Client Messages</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+      </nav>
+      <header class="header">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+                <i class="fas fa-bars"></i>
+              </a>
+            </div>
+            <div class="d-flex align-items-center">
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-2"
+              >
+                <img
+                  src="../assets/img/mail.svg"
+                  alt="mail"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-2"
+              >
+                <img
+                  src="../assets/img/flag.svg"
+                  alt="flag"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-5"
+              >
+                <img
+                  src="../assets/img/notify.svg"
+                  alt="notification"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="d-flex align-items-center">
+                <div
+                  class="userBox d-flex align-items-center justify-content-center rounded-pill me-3"
+                >
+                  <img
+                    src="../assets/img/user.png"
+                    alt="user"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="d-block">
+                  <p class="mb-2 text-white">Mr Prakash Sharma</p>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Admin</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- sidebar-wrapper  -->
+      <main class="page-content form-input-fields">
+        <div class="container-fluid">
+          <h1 class="mainHeading">Add New Client</h1>
+          <h4 class="h4Heading font-rubik text-blue fw-500">
+            Personal Information*
+          </h4>
+          <div class="row col_gap mt-4">
+            <div class="col-lg-4 col-md-6 col-12">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Client Name:</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Client Name"
+              />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email:</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Phone Number:</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Phone Number"
+              />
+            </div>
+          </div>
+          <h4 class="h4Heading font-rubik text-blue fw-500 mt-5">
+            Business Information*
+          </h4>
+          <div class="row col_gap mt-4">
+            <div class="col-lg-4 col-md-6 col-12">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Company Name:</label
+              >
+              <input
+                type="company"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Company Name"
+              />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Industry:</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Industry</option>
+                <option value="1">Industry 1</option>
+                <option value="2">Industry 2</option>
+                <option value="3">Industry 3</option>
+              </select>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Estimated Time:</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Time"
+              />
+            </div>
+          </div>
+          <h4 class="h4Heading font-rubik text-blue fw-500 mt-5">
+            Service Details*
+          </h4>
+          <div class="row col_gap mt-4">
+            <div class="col-lg-4 col-md-6 col-12">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Service Required:</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Service</option>
+                <option value="1">Service 1</option>
+                <option value="2">Service 2</option>
+                <option value="3">Service 3</option>
+              </select>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Estimated Cost:</label
+              >
+              <input
+                type="company"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="₹"
+              />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Business Address:</label
+              >
+              <input
+                type="company"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Address"
+              />
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <label for="exampleFormControlInput1" class="form-label"
+                >KYC Document Upload:</label
+              >
+              <div class="file-drop-area">
+                <span class="choose-file-button file-message">KYC Upload</span>
+                <input class="file-input" type="file" multiple />
+                <span class="upload-abs"
+                  ><img
+                    src="../assets/img/upload.svg"
+                    alt="Upload"
+                    class="img-fluid"
+                /></span>
+              </div>
+            </div>
+            <div class="col-12 mt-lg-4 mt-3">
+              <div class="d-flex align-items-center justify-content-end">
+                <button class="btn customBtn lg-light me-3">Cancel</button>
+                <button class="btn customBtn bg-orange text-white">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- page-content" -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Legal</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- ---Fonts--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+  </head>
+  <body>
+    <div class="page-wrapper chiller-theme toggled">
+      <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-brand">
+            <a href="dashBoard.html">
+              <img src="assets/img/logo.svg" alt="logo" class="img-fluid" />
+            </a>
+            <div id="close-sidebar">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="sidebar-menu">
+            <ul>
+              <!-- <li class="header-menu">
+                <span>General</span>
+              </li> -->
+              <li class="sidebar-dropdown">
+                <a href="dashBoard.html">
+                  <div class="iconSidebar">
+                    <img
+                      src="assets/img/dashIcon.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="assets/img/start-business.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Start Business</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/start-business.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Products</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/start-business.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Orders</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="assets/img/general.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Protect Business</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/general.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>General</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="assets/img/manage.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Manage Business</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/manage.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Manage Business</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Grow Business</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/chart.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Grow Business</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="assets/img/registration.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Other Registration</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="trademarkRegistrationForm.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/registration.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Registration Form</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="renewalForm.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/registration.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Renewal Form</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="objectionResponseForm.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="assets/img/registration.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Response Form</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- <li>
+                <a href="#">
+                  <i class="fa fa-book"></i>
+                  <span>Documentation</span>
+                </a>
+              </li> -->
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+      </nav>
+      <header class="header">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+                <i class="fas fa-bars"></i>
+              </a>
+            </div>
+            <div class="d-flex align-items-center">
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-2"
+              >
+                <img src="assets/img/mail.svg" alt="mail" class="img-fluid" />
+              </a>
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-2"
+              >
+                <img src="assets/img/flag.svg" alt="flag" class="img-fluid" />
+              </a>
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-5"
+              >
+                <img
+                  src="assets/img/notify.svg"
+                  alt="notification"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="d-flex align-items-center">
+                <div
+                  class="userBox d-flex align-items-center justify-content-center rounded-pill me-3"
+                >
+                  <img src="assets/img/user.png" alt="user" class="img-fluid" />
+                </div>
+                <div class="d-block">
+                  <p class="mb-2 text-white">Mr Prakash Sharma</p>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Admin</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- sidebar-wrapper  -->
+      <main class="page-content">
+        <div class="container-fluid">
+          <h1 class="mainHeading">Trademark Objection Response Form</h1>
+          <div class="row tab_col_gap">
+            <div class="col-xl-3 col-lg-4 col-12 text-center">
+              <img
+                src="assets/img/responseInstruction.png"
+                alt="instruction"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-xl-9 col-lg-8 col-12 checkLabel">
+              <h5 class="subheading">General Instructions for Clients:</h5>
+              <div class="form-check mt-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="responseInstruction1"
+                />
+                <label class="form-check-label" for="responseInstruction1">
+                  Complete the Form: Ensure all required sections are filled out
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="responseInstruction2"
+                />
+                <label class="form-check-label" for="responseInstruction2">
+                  Attach Necessary Documents: Upload all relevant documents in
+                  PDF, JPG, or PNG format.
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="responseInstruction3"
+                />
+                <label class="form-check-label" for="responseInstruction3">
+                  NDA Requirement: If NDA is required, please ensure it is
+                  signed and attached before proceeding.
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="responseInstruction4"
+                />
+                <label class="form-check-label" for="responseInstruction4">
+                  Submission: Submit the completed form and attachments to [your
+                  email/portal].
+                </label>
+              </div>
+              <h5 class="subheading mt-5">Who will do the tasks?</h5>
+              <div class="form-check mt-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="responseInstruction5"
+                />
+                <label class="form-check-label" for="responseInstruction5">
+                  Trademark Registration, Renewal, and Objection: Primarily
+                  handled by Trademark Attorneys or IP Lawyers, with potential
+                  involvement from Legal Advisors for objections and more
+                  complex cases.
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="responseInstruction6"
+                />
+                <label class="form-check-label" for="responseInstruction6">
+                  Graphic Designer (for logo-related tasks, if required).
+                </label>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-end mt-lg-5 mt-md-4 mt-3"
+              >
+                <button class="btn customBtn lg-light me-3">Cancel</button>
+                <button class="btn customBtn bg-orange text-white">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- page-content" -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
