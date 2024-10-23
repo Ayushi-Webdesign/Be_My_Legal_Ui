@@ -308,6 +308,7 @@
   .chiller-theme .sidebar-wrapper {
       background: #F4F5F7;
       border-radius: 0px 52px 0 0px;
+      box-shadow: 3px 2px 11px 0px #0000004a;
   }
   
   .chiller-theme .sidebar-wrapper .sidebar-header,
