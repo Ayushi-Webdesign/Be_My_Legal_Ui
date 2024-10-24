@@ -35,7 +35,7 @@ body{font-family: "Inter", serif;}
     border: 1px solid var(--bs-white);
 }
 .userBox img{object-fit: scale-down;}
-.userBoxbg{width: 55px; min-width: 55px; height: 55px; border-radius: 50%; border: 1px solid var(--bs-white);}
+.userBoxbg{width: 55px; min-width: 55px; height: 55px; border-radius: 50%;}
 p{font-size: 14px; font-family: "Inter", serif; font-weight: 500; line-height: 16.59px;}
 .fs-14{font-size: 14px !important;}
 .fs-16{font-size: 16px !important;}
@@ -452,16 +452,16 @@ table tbody tr th, table tbody tr td{
     z-index: 999;
     border-radius: 0 52px 0 0;
     transition: all 0.3s ease;
-    padding: 20px;
+    /* padding: 20px; */
 }
 .page-wrapper.toggled .chat-Sidebar{
     left: 353px;
 }
 .chat-Sidebar-scroll{
-    max-height: calc(100% - 30px);
-    height: calc(100% - 30px);
+    max-height: 80%; 
     overflow-y: auto;
-    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 .text-truncate.mw-sm{max-width: 156px;}
 .chatOptions{list-style-type: none; padding-left: 0; background: #D9D9D9; padding: 11px 16px; border-radius: 12px;}
@@ -469,4 +469,56 @@ table tbody tr th, table tbody tr td{
 .chatOptions li.active{background: var(--bs-white); color: var(--bs-black);}
 .box-profile-chat{
     border-bottom: 1px solid #F8F3F3;
+    padding: 20px;
 }
+.chatBoxContent{
+    margin-left: 344px;
+    margin-top: 10px;
+    border: 1px solid var(--bs-grey);
+    border-radius: 12px;
+}
+.chatProfile{padding: 10px 30px; border-bottom: 1px solid var(--bs-grey);}
+.text-green{color: var(--bs-green) !important;}
+.chatBoxMid{
+    overflow-y: auto;
+    min-height: 560px;
+    max-height: 560px;
+    padding: 20px 30px;
+}
+.chatBoxLeft{margin-top: 40px;}
+.chatBoxRight{margin-top: 50px;}
+.chatBoxLeft p, .chatBoxRight p{font-family: "Rubik", serif;}
+.chatBoxLeft .message, .chatBoxRight .message{
+    background: var(--bs-grey);
+    padding: 14px 24px;
+    border-radius: 12px;
+    margin-top: 18px;
+    max-width: 443px;
+}
+.chatBoxRight .message{background: #FDE3E3 !important;}
+.chatBoxLeft .message p, .chatBoxRight .message p{line-height: 18.96px; font-weight: 400;}
+.chatFooter{
+    background: var(--bs-white);
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    border-radius: 12px;
+    border-top: 1px solid var(--bs-grey);
+    padding: 6px 14px 6px 24px;
+}
+.chatFooter .form-control{
+    padding: 0;
+    border: none;
+    font-size: 16px;
+    color: var(--nr-grey);
+    font-weight: 500;
+    width: 70%;
+}
+.chatShareBtn{
+    width: 56px;
+    min-width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: var(--bs-blue);
+}
+.chatShareBtn:hover{background: var(--md-grey);}
