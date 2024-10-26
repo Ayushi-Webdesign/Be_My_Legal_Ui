@@ -360,10 +360,8 @@
       <!-- sidebar-wrapper  -->
       <main class="page-content form-input-fields">
         <div class="container-fluid">
-          <h1 class="mainHeading">Add New Client</h1>
-          <h4 class="h4Heading font-rubik text-blue fw-500">
-            Personal Information*
-          </h4>
+          <h1 class="mainHeading">Create Invoice based on the services:</h1>
+          <h4 class="h4Heading font-rubik text-blue fw-500">Create Invoice</h4>
           <div class="row col_gap mt-4">
             <div class="col-lg-4 col-md-6 col-12">
               <label for="exampleFormControlInput1" class="form-label"
@@ -378,118 +376,121 @@
             </div>
             <div class="col-lg-4 col-md-6 col-12">
               <label for="exampleFormControlInput1" class="form-label"
-                >Email:</label
+                >Service Type:</label
               >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Email Address"
-              />
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Service Type</option>
+                <option value="1">Service Type 1</option>
+                <option value="2">Service Type 2</option>
+                <option value="3">Service Type 3</option>
+              </select>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 date-picked">
+              <label for="objectionDate" class="form-label">Task Amount:</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="objectionDate"
+                  placeholder="Task Deadline"
+                />
+                <span
+                  class="input-group-text calendar-icon"
+                  id="openCalendarObjection"
+                >
+                  <img
+                    src="../assets/img/calendar.svg"
+                    alt="Calendar Icon"
+                    class="img-fluid"
+                    width="20"
+                    height="20"
+                  />
+                </span>
+              </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12">
               <label for="exampleFormControlInput1" class="form-label"
-                >Phone Number:</label
+                >Payment Method:</label
               >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Phone Number"
-              />
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Payment Method</option>
+                <option value="1">Cash</option>
+                <option value="2">Credit Card</option>
+                <option value="3">UPI</option>
+                <option value="4">Online</option>
+              </select>
             </div>
           </div>
-          <h4 class="h4Heading font-rubik text-blue fw-500 mt-5">
-            Business Information*
-          </h4>
+          <h4 class="h4Heading font-rubik text-blue fw-500 mt-5">Manage Payments</h4>
           <div class="row col_gap mt-4">
             <div class="col-lg-4 col-md-6 col-12">
               <label for="exampleFormControlInput1" class="form-label"
-                >Company Name:</label
+                >Client Name:</label
               >
               <input
-                type="company"
+                type="email"
                 class="form-control"
                 id="exampleFormControlInput1"
-                placeholder="Company Name"
+                placeholder="Client Name"
               />
             </div>
             <div class="col-lg-4 col-md-6 col-12">
               <label for="exampleFormControlInput1" class="form-label"
-                >Industry:</label
+                >Service Requested:</label
               >
               <select class="form-select" aria-label="Default select example">
-                <option selected>Industry</option>
-                <option value="1">Industry 1</option>
-                <option value="2">Industry 2</option>
-                <option value="3">Industry 3</option>
+                <option selected>Service Type</option>
+                <option value="1">Service Type 1</option>
+                <option value="2">Service Type 2</option>
+                <option value="3">Service Type 3</option>
               </select>
             </div>
             <div class="col-lg-4 col-md-6 col-12">
               <label for="exampleFormControlInput1" class="form-label"
-                >Estimated Time:</label
+                >Payment Status:</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Payment Status</option>
+                <option value="1">Completed</option>
+                <option value="2">In Progress</option>
+                <option value="3">Updated</option>
+              </select>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 date-picked">
+              <label for="objectionDate" class="form-label">Payment Date:</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="objectionDate"
+                  placeholder="Select Date"
+                />
+                <span
+                  class="input-group-text calendar-icon"
+                  id="openCalendarObjection"
+                >
+                  <img
+                    src="../assets/img/calendar.svg"
+                    alt="Calendar Icon"
+                    class="img-fluid"
+                    width="20"
+                    height="20"
+                  />
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Amount:</label
               >
               <input
                 type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Time"
-              />
-            </div>
-          </div>
-          <h4 class="h4Heading font-rubik text-blue fw-500 mt-5">
-            Service Details*
-          </h4>
-          <div class="row col_gap mt-4">
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Service Required:</label
-              >
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Service</option>
-                <option value="1">Service 1</option>
-                <option value="2">Service 2</option>
-                <option value="3">Service 3</option>
-              </select>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Estimated Cost:</label
-              >
-              <input
-                type="company"
                 class="form-control"
                 id="exampleFormControlInput1"
                 placeholder="₹"
               />
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Business Address:</label
-              >
-              <input
-                type="company"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Address"
-              />
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >KYC Document Upload:</label
-              >
-              <div class="file-drop-area">
-                <span class="choose-file-button file-message">KYC Upload</span>
-                <input class="file-input" type="file" multiple />
-                <span class="upload-abs"
-                  ><img
-                    src="../assets/img/upload.svg"
-                    alt="Upload"
-                    class="img-fluid"
-                /></span>
-              </div>
-            </div>
-            <div class="col-12 mt-lg-4 mt-3">
+            <div class="col-12 mt-lg-5 mt-md-4 mt-3">
               <div class="d-flex align-items-center justify-content-end">
                 <button class="btn customBtn lg-light me-3">Cancel</button>
                 <button class="btn customBtn bg-orange text-white">Next</button>

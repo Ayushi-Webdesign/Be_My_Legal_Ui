@@ -358,141 +358,45 @@
         </div>
       </header>
       <!-- sidebar-wrapper  -->
-      <main class="page-content form-input-fields">
+      <main class="page-content form-input-fields table-custom">
         <div class="container-fluid">
-          <h1 class="mainHeading">Add New Client</h1>
+          <h1 class="mainHeading">Reports and Analytics</h1>
           <h4 class="h4Heading font-rubik text-blue fw-500">
-            Personal Information*
+            Performance Reports
           </h4>
-          <div class="row col_gap mt-4">
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Client Name:</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Client Name"
-              />
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Email:</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Email Address"
-              />
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Phone Number:</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Phone Number"
-              />
-            </div>
-          </div>
-          <h4 class="h4Heading font-rubik text-blue fw-500 mt-5">
-            Business Information*
-          </h4>
-          <div class="row col_gap mt-4">
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Company Name:</label
-              >
-              <input
-                type="company"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Company Name"
-              />
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Industry:</label
-              >
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Industry</option>
-                <option value="1">Industry 1</option>
-                <option value="2">Industry 2</option>
-                <option value="3">Industry 3</option>
-              </select>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Estimated Time:</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Time"
-              />
-            </div>
-          </div>
-          <h4 class="h4Heading font-rubik text-blue fw-500 mt-5">
-            Service Details*
-          </h4>
-          <div class="row col_gap mt-4">
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Service Required:</label
-              >
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Service</option>
-                <option value="1">Service 1</option>
-                <option value="2">Service 2</option>
-                <option value="3">Service 3</option>
-              </select>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Estimated Cost:</label
-              >
-              <input
-                type="company"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="₹"
-              />
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Business Address:</label
-              >
-              <input
-                type="company"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Address"
-              />
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <label for="exampleFormControlInput1" class="form-label"
-                >KYC Document Upload:</label
-              >
-              <div class="file-drop-area">
-                <span class="choose-file-button file-message">KYC Upload</span>
-                <input class="file-input" type="file" multiple />
-                <span class="upload-abs"
-                  ><img
-                    src="../assets/img/upload.svg"
-                    alt="Upload"
-                    class="img-fluid"
-                /></span>
+          <div class="row col_gap align-items-center">
+            <div class="col-lg-7 col-12">
+              <div class="cardBox d-flex flex-wrap">
+                <div id="newbarChart"></div>
+                <div class="reports-labels">
+                  <ul>
+                    <li>
+                      <span class="marker bg-peach me-2"></span>
+                      Number of clients onboarded
+                    </li>
+                    <li class="mt-2">
+                      <span class="marker bg-green me-2"></span>
+                      Number of tasks completed
+                    </li>
+                    <li class="mt-2">
+                      <span class="marker bg-dr-blue me-2"></span>
+                      Client satisfaction rating
+                    </li>
+                    <li class="mt-2">
+                      <span class="marker bg-blue me-2"></span>
+                      Task completion rate
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="col-12 mt-lg-4 mt-3">
-              <div class="d-flex align-items-center justify-content-end">
-                <button class="btn customBtn lg-light me-3">Cancel</button>
-                <button class="btn customBtn bg-orange text-white">Next</button>
+            <div class="col-lg-5 col-12">
+              <div class="cardBox">
+                <div class="guage-wh">
+                  <figure class="highcharts-figure">
+                    <div id="guageContainer"></div>
+                  </figure>
+                </div>
               </div>
             </div>
           </div>
@@ -502,8 +406,17 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="../assets/js/barChart.js"></script>
+    <script src="../assets/js/guageChart.js"></script>
     <script src="../assets/js/sidebar.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/datepicker.js"></script>
   </body>
 </html>
