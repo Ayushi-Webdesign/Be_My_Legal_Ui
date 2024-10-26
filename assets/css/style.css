@@ -522,3 +522,47 @@ table tbody tr th, table tbody tr td{
     background: var(--bs-blue);
 }
 .chatShareBtn:hover{background: var(--md-grey);}
+tbody tr:nth-last-child(1) .dropdown-custom-content {
+    bottom: 0;
+}
+
+tbody tr:nth-last-child(2) .dropdown-custom-content {
+    bottom: 0;
+}
+
+tbody tr:nth-last-child(3) .dropdown-custom-content {
+    bottom: 0;
+}
+tbody tr:nth-child(1) .dropdown-custom-content {
+    top: 0;
+}
+
+tbody tr:nth-child(2) .dropdown-custom-content {
+    top: 0;
+}
+
+tbody tr:nth-child(3) .dropdown-custom-content {
+    top: 0;
+}
+#newbarChart {width: 60%; height: 400px !important;}
+.highcharts-root{font-family: "Rubik", serif !important;}
+.reports-labels{width: 40%;}
+.reports-labels ul{list-style-type: none; padding-left: 0; float: right;}
+.reports-labels ul li{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-family: "Rubik", serif;
+    font-weight: 500;
+}
+.reports-labels ul .marker{
+    width: 14px;
+    min-width: 14px;
+    height: 14px;
+    border-radius: 2px;
+}
+.bg-peach{background: #FF7D7D;}
+.bg-green{background: #A7CF55;}
+.bg-dr-blue{background: #426ACF;}
+.bg-blue{background: #25C0E0;}
+.guage-wh{width: 60%; margin: 0 auto;}
