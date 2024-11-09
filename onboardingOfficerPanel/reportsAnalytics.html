@@ -219,7 +219,7 @@
                 </div>
               </li>
               <li class="sidebar-dropdown">
-                <a href="#">
+                <a href="reportsAnalytics.html">
                   <div class="iconSidebar">
                     <img
                       src="../assets/img/chart.svg"
@@ -267,12 +267,12 @@
                       class="img-fluid"
                     />
                   </div>
-                  <span>Profile Settings</span>
+                  <span>Profile</span>
                 </a>
                 <div class="sidebar-submenu">
                   <ul>
                     <li>
-                      <a href="#">
+                      <a href="profileSettings.html">
                         <div class="iconSidebar">
                           <img
                             src="../assets/img/chart.svg"
@@ -280,7 +280,7 @@
                             class="img-fluid"
                           />
                         </div>
-                        <span>Client Messages</span>
+                        <span>Profile Settings</span>
                       </a>
                     </li>
                   </ul>
@@ -358,13 +358,19 @@
         </div>
       </header>
       <!-- sidebar-wrapper  -->
-      <main class="page-content form-input-fields table-custom">
+      <main class="page-content">
         <div class="container-fluid">
           <h1 class="mainHeading">Reports and Analytics</h1>
-          <h4 class="h4Heading font-rubik text-blue fw-500">
-            Performance Reports
-          </h4>
-          <div class="row col_gap align-items-center">
+          <div class="d-flex align-items-center">
+            <h4 class="h4Heading font-rubik text-blue fw-500 mb-0 me-3">
+              Performance Reports
+            </h4>
+            <a href="#" class="btn customBtn py-2 px-3 w-auto greenBtnBg text-white me-3">Weekly Report</a>
+            <a href="#" class="btn customBtn py-2 px-3 w-auto bgmd-grey text-white me-3">Monthly Report</a>
+            <a href="#" class="btn customBtn py-2 px-3 w-auto greenProgress">Yearly</a>
+          </div>
+       
+          <div class="row col_gap mt-5">
             <div class="col-lg-7 col-12">
               <div class="cardBox d-flex flex-wrap">
                 <div id="newbarChart"></div>
@@ -389,6 +395,7 @@
                   </ul>
                 </div>
               </div>
+              <p class="text-center mt-3 font-rubik">Performance Reports</p>
             </div>
             <div class="col-lg-5 col-12">
               <div class="cardBox">
@@ -397,7 +404,24 @@
                     <div id="guageContainer"></div>
                   </figure>
                 </div>
+                <div class="payment-reports">
+                  <ul>
+                    <li>
+                      <span class="marker bg-peach me-2 pay-yellow"></span>
+                      Total Amount Earned
+                    </li>
+                    <li class="mt-2">
+                      <span class="marker bg-green me-2"></span>
+                      Payments Pending
+                    </li>
+                    <li class="mt-2">
+                      <span class="marker bg-dr-blue me-2 pay-grey"></span>
+                      Completed Payments
+                    </li>
+                  </ul>
+                </div>
               </div>
+              <p class="text-center mt-3 font-rubik">Payment Reports</p>
             </div>
           </div>
         </div>

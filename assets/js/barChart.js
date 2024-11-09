@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
     legend: {
       enabled: false, // Adjust vertical position as needed
     },
+    exporting: {
+      enabled: false, // Disable the context menu
+    },
     xAxis: {
       categories: ["Total Clients", "Tasks Completed", "Clients Satisfaction Rating", "Task Completion Rate"],
       crosshair: true,

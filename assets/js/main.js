@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // ----checkbox for entire table-----
 document.querySelectorAll(".table tbody tr, .table thead tr").forEach((row) => {
   row.addEventListener("click", function () {
-    const checkbox = row.querySelector(".row-checkbox, .header-checkbox"); 
+    const checkbox = row.querySelector(".row-checkbox, .header-checkbox");
     if (checkbox) {
       checkbox.checked = !checkbox.checked; // Toggle checkbox state
       row.classList.toggle("selected", checkbox.checked); // Add class for styling if needed
@@ -104,3 +104,26 @@ function closeAllDropdowns() {
 window.onclick = function () {
   closeAllDropdowns(); // Close all dropdowns on any click outside
 };
+
+// upload images
+document
+  .getElementById("imageUpload")
+  .addEventListener("change", function (event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        document.getElementById("profileImage").src = e.target.result;
+        document.getElementById("uploadText").style.display = "none"; // Hide only the text
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+//switch btn
+document.getElementById("toggleSwitch").addEventListener("change", function () {
+  if (this.checked) {
+    console.log("Switch is ON");
+  } else {
+    console.log("Switch is OFF");
+  }
+});

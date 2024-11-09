@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Legal</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <!-- <link href="../assets/img/favicon.png" rel="icon" /> -->
+    <!-- <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
+
+    <!-- ---Fonts--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/font.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/sidebar.css" />
+  </head>
+  <body>
+    <div class="page-wrapper chiller-theme toggled">
+      <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-brand">
+            <a href="dashBoard.html">
+              <img src="../assets/img/logo.svg" alt="logo" class="img-fluid" />
+            </a>
+            <div id="close-sidebar">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="sidebar-menu">
+            <ul>
+              <li class="sidebar-dropdown">
+                <a href="dashBoard.html">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/dashIcon.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/start-business.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Client Management</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="addNewClient.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/start-business.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Add New</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="clientHistory.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/start-business.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Client History</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/general.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Payment</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="paymentHistory.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/general.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Payment History</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="paymentManagement.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/general.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Payment Management</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/manage.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Task Manage</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="addNewTask.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/manage.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Add New</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="manageTask.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/manage.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Manage Task</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="taskOverview.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/manage.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Task Overview</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Chat</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="clientMessages.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/chart.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Client Messages</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="reportsAnalytics.html">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Report Analysis</span>
+                </a>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Invoice</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="createInvoice.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/chart.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Create Invoice</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <div class="iconSidebar">
+                    <img
+                      src="../assets/img/chart.svg"
+                      alt="dashbaord"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <span>Profile</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="profileSettings.html">
+                        <div class="iconSidebar">
+                          <img
+                            src="../assets/img/chart.svg"
+                            alt="dashbaord"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <span>Profile Settings</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+      </nav>
+      <header class="header">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+                <i class="fas fa-bars"></i>
+              </a>
+            </div>
+            <div class="d-flex align-items-center">
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-2"
+              >
+                <img
+                  src="../assets/img/mail.svg"
+                  alt="mail"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-2"
+              >
+                <img
+                  src="../assets/img/flag.svg"
+                  alt="flag"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="#"
+                class="navBox rounded-pill p-1 d-flex align-items-center justify-content-center me-5"
+              >
+                <img
+                  src="../assets/img/notify.svg"
+                  alt="notification"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="d-flex align-items-center">
+                <div
+                  class="userBox d-flex align-items-center justify-content-center rounded-pill me-3"
+                >
+                  <img
+                    src="../assets/img/user.png"
+                    alt="user"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="d-block">
+                  <p class="mb-2 text-white">Mr Prakash Sharma</p>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Admin</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- sidebar-wrapper  -->
+      <main class="page-content form-input-fields">
+        <div class="container-fluid">
+          <nav class="profile-tabs">
+            <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+              <button
+                class="nav-link active"
+                id="nav-psInfo-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-psInfo"
+                type="button"
+                role="tab"
+                aria-controls="nav-psInfo"
+                aria-selected="true"
+              >
+                Personal Information
+              </button>
+              <button
+                class="nav-link"
+                id="nav-accSettings-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-accSettings"
+                type="button"
+                role="tab"
+                aria-controls="nav-accSettings"
+                aria-selected="false"
+              >
+                Account Settings
+              </button>
+              <button
+                class="nav-link"
+                id="nav-email-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-email"
+                type="button"
+                role="tab"
+                aria-controls="nav-email"
+                aria-selected="false"
+              >
+                Email
+              </button>
+              <button
+                class="nav-link"
+                id="nav-notify-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-notify"
+                type="button"
+                role="tab"
+                aria-controls="nav-notify"
+                aria-selected="false"
+              >
+                Notification
+              </button>
+              <button
+                class="nav-link"
+                id="nav-security-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-security"
+                type="button"
+                role="tab"
+                aria-controls="nav-security"
+                aria-selected="false"
+              >
+                Security
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content p-0 mt-5" id="nav-tabContent">
+            <div
+              class="tab-pane fade active show"
+              id="nav-psInfo"
+              role="tabpanel"
+              aria-labelledby="nav-psInfo-tab"
+            >
+              <div class="text-black d-flex align-items-center fw-500">
+                <i class="fa-regular fa-user me-2"></i>
+                <p class="fs-16 font-rubik mb-0">User Information</p>
+              </div>
+              <div class="d-flex align-items-center mt-3">
+                <div class="profile-container me-4">
+                  <img src="" id="profileImage" class="profile-img" />
+                  <label class="upload-btn">
+                    <span id="uploadText"
+                      ><span class="upload-plus">+</span
+                      ><span>Profile Photo</span></span
+                    >
+                    <input type="file" id="imageUpload" accept="image/*" />
+                  </label>
+                </div>
+                <div>
+                  <div class="d-flex">
+                    <button class="btn btn-change">Change</button>
+                    <button class="btn btn-remove">Remove</button>
+                  </div>
+                  <p class="mb-0 mt-3 font-rubik fw-light fs-16">
+                    For better preview recommended size is 450px X 450px. Max
+                    size 5MB
+                  </p>
+                </div>
+              </div>
+
+              <div class="row col_gap mt-4">
+                <div class="col-lg-4 col-md-6 col-12">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Name:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Email:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Phone Number:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Phone Number"
+                  />
+                </div>
+              </div>
+              <h4 class="h4Heading font-rubik text-blue fw-500 mt-5">
+                Change Password
+              </h4>
+              <div class="row col_gap mt-4">
+                <div class="col-lg-4 col-md-6 col-12">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Current Password:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Current Password"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >New Password:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="New Password"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Confirm New Password:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Confirm New Password"
+                  />
+                </div>
+                <div class="col-12 mt-lg-5 mt-md-4 mt-3">
+                  <div class="d-flex align-items-center justify-content-end">
+                    <button class="btn customBtn bg-orange text-white">
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-accSettings"
+              role="tabpanel"
+              aria-labelledby="nav-accSettings-tab"
+            >
+              <div class="col-lg-8">
+                <div
+                  class="d-flex align-items-baseline justify-content-between"
+                >
+                  <div>
+                    <p class="fs-16 text-black font-rubik">
+                      Two Step Verification
+                    </p>
+                    <p class="fw-light mb-0 text-black font-rubik">
+                      Two step verification is very secured and restricts in
+                      happening faulty practices.
+                    </p>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" id="toggleSwitch" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div
+                  class="d-flex align-items-baseline justify-content-between mt-5"
+                >
+                  <div>
+                    <p class="fs-16 text-black font-rubik">Authentication</p>
+                    <div class="authBtn d-flex">
+                      <button class="btn btn-change">
+                        <span class="me-2"
+                          ><img
+                            src="../assets/img/pinAuth.svg"
+                            alt="Pin"
+                            class="img-fluid"
+                        /></span>
+                        Pin
+                      </button>
+                      <button class="btn btn-remove">
+                        <span class="me-2"
+                          ><img
+                            src="../assets/img/passAuth.svg"
+                            alt="Pin"
+                            class="img-fluid"
+                        /></span>
+                        Password
+                      </button>
+                    </div>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" id="toggleSwitch" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div
+                  class="d-flex align-items-baseline justify-content-between mt-5"
+                >
+                  <div>
+                    <p class="fs-16 text-black font-rubik">Recovery Mail</p>
+                    <p class="fw-light mb-0 text-black font-rubik">
+                      Incase of forgetting password mails are sent to
+                      heifo@gmail.com.
+                    </p>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" id="toggleSwitch" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div
+                  class="d-flex align-items-baseline justify-content-between mt-5"
+                >
+                  <div>
+                    <p class="fs-16 text-black font-rubik">SMS Recovery</p>
+                    <p class="fw-light mb-0 text-black font-rubik">
+                      SMS are sent to 9102312xx in case of recovery
+                    </p>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" id="toggleSwitch" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div class="d-block mt-5">
+                  <p class="fs-16 text-black font-rubik">Reset Password</p>
+                  <p class="fw-light mb-0 text-black font-rubik">
+                    Password should be min of 8 digits, atleast One Capital
+                    letter and One Special Character includes.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-end mt-5">
+                <button class="btn customBtn bg-orange text-white">
+                  Save Changes
+                </button>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-email"
+              role="tabpanel"
+              aria-labelledby="nav-email-tab"
+            >
+              <div class="SettingsCard">
+                <div
+                  class="d-flex align-items-baseline justify-content-between p-4 bbg"
+                >
+                  <p class="mb-0 text-black font-rubik">Langugae</p>
+                  <div class="ln-field">
+                    <p class="mb-0 text-black fw-light font-rubik">Langugae</p>
+                    <select
+                      class="form-select mt-3"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Language</option>
+                      <option value="1">English</option>
+                      <option value="2">French</option>
+                      <option value="3">Hindi</option>
+                    </select>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" id="toggleSwitch" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div
+                  class="d-flex align-items-baseline justify-content-between p-4"
+                >
+                  <p class="mb-0 text-black font-rubik">Notifications</p>
+                  <div>
+                    <div class="form-check radioBtn">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Desktop Notification
+                      </label>
+                    </div>
+                    <div class="form-check radioBtn">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault2"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Mobile Notification
+                      </label>
+                    </div>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" id="toggleSwitch" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-end mt-5">
+                <button class="btn customBtn bg-orange text-white">
+                  Save Changes
+                </button>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-notify"
+              role="tabpanel"
+              aria-labelledby="nav-notify-tab"
+            >
+              <div class="SettingsCard p-4">
+                <div class="row bbg pb-4">
+                  <div class="col-lg-5 col-md-6 col-12">
+                    <p class="text-black mb-0 font-rubik">
+                      Email Notifications
+                    </p>
+                    <p class="fw-light mt-2 mb-0 text-black font-rubik">
+                      Email Notifications are the notifications you will
+                      received when your offline you can customize them by
+                      enabling or disabling them.
+                    </p>
+                  </div>
+                  <div class="col-lg-7 col-md-6 col-12">
+                    <div
+                      class="d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-9">
+                        <p class="mb-0 text-black font-rubik">
+                          Updates & Features
+                        </p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          Notifications about new updates and their features
+                        </p>
+                      </div>
+                      <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <div
+                      class="mt-4 d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-9">
+                        <p class="mb-0 text-black font-rubik">Early Access</p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          Users are selected for beta testing of new
+                          update,notifications relating or participate in any of
+                          paid product promotion.
+                        </p>
+                      </div>
+                      <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <div
+                      class="mt-4 d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-9">
+                        <p class="mb-0 text-black font-rubik">
+                          Email Shortcuts
+                        </p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          Shortcut notifications for email
+                        </p>
+                      </div>
+                      <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <div
+                      class="mt-4 d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-9">
+                        <p class="mb-0 text-black font-rubik">New Mails</p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          Notifications related to new mails received
+                        </p>
+                      </div>
+                      <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <div
+                      class="mt-4 d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-9">
+                        <p class="mb-0 text-black font-rubik">
+                          Mail Chat Messages
+                        </p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          Any of new messages are received will be updated
+                          through notifications.
+                        </p>
+                      </div>
+                      <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pt-4">
+                  <div class="col-lg-5 col-md-6 col-12">
+                    <p class="text-black mb-0 font-rubik">
+                      Publish Notifications
+                    </p>
+                    <p class="fw-light mt-2 mb-0 text-black font-rubik">
+                      Push notifications are recieved when you are online, you
+                      can customize them by enabling or disabling them
+                    </p>
+                  </div>
+                  <div class="col-lg-7 col-md-6 col-12">
+                    <div
+                      class="d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-9">
+                        <p class="mb-0 text-black font-rubik">New Mails</p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          Notifications related to new mails received.
+                        </p>
+                      </div>
+                      <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <div
+                      class="mt-4 d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-9">
+                        <p class="mb-0 text-black font-rubik">
+                          Mail Chat Messages
+                        </p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          Any of new messages are received will be updated
+                          through notifications.
+                        </p>
+                      </div>
+                      <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <div
+                      class="mt-4 d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-9">
+                        <p class="mb-0 text-black font-rubik">
+                          Mail Extensions
+                        </p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          Notifications related to the extensions received by
+                          new emails and thier propertied also been displayed.
+                        </p>
+                      </div>
+                      <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-end mt-5">
+                <button class="btn customBtn bg-orange text-white">
+                  Save Changes
+                </button>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-security"
+              role="tabpanel"
+              aria-labelledby="nav-security-tab"
+            >
+              <div class="SettingsCard p-4">
+                <div class="row bbg pb-4">
+                  <div class="col-lg-5 col-md-6 col-12">
+                    <p class="text-black mb-0 font-rubik">Logging In</p>
+                    <p class="fw-light mt-2 mb-0 text-black font-rubik">
+                      Security settings related to logging into our email
+                      account and taking down account if any mischevious action
+                      happended.
+                    </p>
+                  </div>
+                  <div class="col-lg-7 col-md-6 col-12">
+                    <div
+                      class="d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-8">
+                        <p class="mb-0 text-black font-rubik">
+                          Max Limit for login attempts
+                        </p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          Account will freeze for 24hrs while attempt to login
+                          with wrong credentials for selected number of times
+                        </p>
+                      </div>
+                      <select
+                        class="form-select w-auto pe-5"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Attempts</option>
+                        <option value="1">1 Attempts</option>
+                        <option value="2">2 Attempts</option>
+                        <option value="3">3 Attempts</option>
+                      </select>
+                    </div>
+                    <div
+                      class="mt-4 d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-8">
+                        <p class="mb-0 text-black font-rubik">
+                          Account Freeze time management
+                        </p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          You can change the time for the account freeze when
+                          attempts for
+                        </p>
+                      </div>
+                      <select
+                        class="form-select w-auto pe-5"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Day</option>
+                        <option value="1">1 Day</option>
+                        <option value="2">2 Days</option>
+                        <option value="3">3 Days</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row py-4 bbg">
+                  <div class="col-lg-5 col-md-6 col-12">
+                    <p class="text-black mb-0 font-rubik">Unknown Chats</p>
+                    <p class="fw-light mt-2 mb-0 text-black font-rubik">
+                      Security settings related to unknown chats.
+                    </p>
+                  </div>
+                  <div class="col-lg-7 col-md-6 col-12">
+                    <div
+                      class="d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-8">
+                        <p class="mb-0 text-black font-rubik">
+                          Minimun number of characters in the password
+                        </p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          There should be a minimum number of characters for a
+                          password to be validated that shouls be set here.
+                        </p>
+                      </div>
+                      <div class="py-2 px-3 min-char fw-light fs-14 font-rubik">
+                        13
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-8">
+                        <p class="mb-0 text-black font-rubik">
+                          Contain A Number
+                        </p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          Password should contain a number.
+                        </p>
+                      </div>
+                      <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <div
+                      class="mt-4 d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-8">
+                        <p class="mb-0 text-black font-rubik">
+                          Contain A Special Character
+                        </p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          Password should contain a special Character.
+                        </p>
+                      </div>
+                      <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <div
+                      class="mt-4 d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-8">
+                        <p class="mb-0 text-black font-rubik">
+                          Atleast One Capital Letter
+                        </p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          Password should contain atleast one capital letter.
+                        </p>
+                      </div>
+                      <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    <div
+                      class="mt-4 d-flex align-items-baseline justify-content-between"
+                    >
+                      <div class="col-8">
+                        <p class="mb-0 text-black font-rubik">
+                          Maximun Password Length
+                        </p>
+                        <p class="mt-2 fw-light mb-0 text-black font-rubik">
+                          Maximum password lenth should be selected here.
+                        </p>
+                      </div>
+                      <div class="py-2 px-3 min-char fw-light fs-14 font-rubik">
+                        16
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pt-4">
+                  <div class="col-lg-5 col-md-6 col-12">
+                    <p class="mb-0 text-black font-rubik">Unknown Chats</p>
+                    <p class="mt-2 mb-0 text-black font-rubik fw-light">
+                      Security settings related to unknown chats.
+                    </p>
+                  </div>
+                  <div class="col-lg-7 col-md-6 col-12">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div>
+                        <div class="form-check radioBtn">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault3"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexRadioDefault3"
+                          >
+                            Auto Correct On
+                          </label>
+                        </div>
+                        <div class="form-check radioBtn">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault4"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexRadioDefault4"
+                          >
+                            Auto Correct Off
+                          </label>
+                        </div>
+                      </div>
+                      <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-end mt-5">
+                <button class="btn customBtn bg-orange text-white">
+                  Save Changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- page-content" -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
