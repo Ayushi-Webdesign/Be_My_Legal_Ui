@@ -219,7 +219,7 @@
                 </div>
               </li>
               <li class="sidebar-dropdown">
-                <a href="#">
+                <a href="reportsAnalytics.html">
                   <div class="iconSidebar">
                     <img
                       src="../assets/img/chart.svg"
@@ -267,12 +267,12 @@
                       class="img-fluid"
                     />
                   </div>
-                  <span>Profile Settings</span>
+                  <span>Profile</span>
                 </a>
                 <div class="sidebar-submenu">
                   <ul>
                     <li>
-                      <a href="#">
+                      <a href="profileSettings.html">
                         <div class="iconSidebar">
                           <img
                             src="../assets/img/chart.svg"
@@ -280,7 +280,7 @@
                             class="img-fluid"
                           />
                         </div>
-                        <span>Client Messages</span>
+                        <span>Profile Settings</span>
                       </a>
                     </li>
                   </ul>
@@ -386,17 +386,17 @@
               </select>
             </div>
             <div class="col-lg-4 col-md-6 col-12 date-picked">
-              <label for="objectionDate" class="form-label">Task Amount:</label>
+              <label for="taskDeadline" class="form-label">Task Amount:</label>
               <div class="input-group">
                 <input
                   type="text"
                   class="form-control"
-                  id="objectionDate"
+                  id="taskDeadline"
                   placeholder="Task Deadline"
                 />
                 <span
                   class="input-group-text calendar-icon"
-                  id="openCalendarObjection"
+                  id="openTaskDeadline"
                 >
                   <img
                     src="../assets/img/calendar.svg"
@@ -421,7 +421,9 @@
               </select>
             </div>
           </div>
-          <h4 class="h4Heading font-rubik text-blue fw-500 mt-5">Manage Payments</h4>
+          <h4 class="h4Heading font-rubik text-blue fw-500 mt-5">
+            Manage Payments
+          </h4>
           <div class="row col_gap mt-4">
             <div class="col-lg-4 col-md-6 col-12">
               <label for="exampleFormControlInput1" class="form-label"
@@ -457,17 +459,19 @@
               </select>
             </div>
             <div class="col-lg-4 col-md-6 col-12 date-picked">
-              <label for="objectionDate" class="form-label">Payment Date:</label>
+              <label for="paymentDate" class="form-label"
+                >Payment Date:</label
+              >
               <div class="input-group">
                 <input
                   type="text"
                   class="form-control"
-                  id="objectionDate"
+                  id="paymentDate"
                   placeholder="Select Date"
                 />
                 <span
                   class="input-group-text calendar-icon"
-                  id="openCalendarObjection"
+                  id="openPaymentDate"
                 >
                   <img
                     src="../assets/img/calendar.svg"
@@ -505,6 +509,7 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="../assets/js/sidebar.js"></script>
+    <script src="../assets/js/datepicker.js"></script>
     <script src="../assets/js/main.js"></script>
   </body>
 </html>

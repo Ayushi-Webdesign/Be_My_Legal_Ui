@@ -23,3 +23,19 @@ $("#objectionDate").datepicker({
 $("#openCalendarObjection").on("click", function () {
   $("#objectionDate").datepicker("show");
 });
+$("#taskDeadline").datepicker({
+  format: "ddth MM yyyy",
+  autoclose: true,
+  orientation: "bottom",
+});
+$("#openTaskDeadline").on("click", function () {
+  $("#taskDeadline").datepicker("show");
+});
+$("#paymentDate").datepicker({
+  format: "ddth MM yyyy",
+  autoclose: true,
+  orientation: "bottom",
+});
+$("#openPaymentDate").on("click", function () {
+  $("#paymentDate").datepicker("show");
+});

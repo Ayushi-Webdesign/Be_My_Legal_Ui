@@ -36,12 +36,12 @@ Highcharts.chart("guageContainer", {
     backgroundColor: "none",
     shadow: false,
     style: {
-      fontSize: "16px",
+      fontSize: "13px",
     },
     valueSuffix: "%",
     pointFormat:
       "{series.name}<br>" +
-      '<span style="font-size: 1.5em; color: #000; ' +
+      '<span style="font-size: 1em; color: #000; ' +
       'font-weight: bold">{point.y}</span>',
     positioner: function (labelWidth, labelHeight) {
       return {
@@ -99,7 +99,7 @@ Highcharts.chart("guageContainer", {
 
   series: [
     {
-      name: "Conversion",
+      name: "Total",
       data: [
         {
           color: "#F7A400",
@@ -114,7 +114,7 @@ Highcharts.chart("guageContainer", {
       },
     },
     {
-      name: "Engagement",
+      name: "Pending",
       data: [
         {
           color: "#C3DB26",
@@ -129,7 +129,7 @@ Highcharts.chart("guageContainer", {
       },
     },
     {
-      name: "Feedback",
+      name: "Completed",
       data: [
         {
           color: "#DAE1E9",
